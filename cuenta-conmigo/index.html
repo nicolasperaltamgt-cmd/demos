@@ -9,7 +9,7 @@
 <meta property="og:title" content="CUENTA CONMIGO — así podría verse tu web">
 <meta property="og:image" content="https://images.unsplash.com/photo-1662532577856-e8ee8b138a8b?auto=format&fit=crop&q=72&w=1200&h=630">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;600;800&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#FFFFFF;--fg:#2B1B22;--ac:#C2255C;--acfg:#FFFFFF}
 *{box-sizing:border-box;margin:0}
@@ -72,7 +72,35 @@ section{padding:64px 0}
 .frase em{font-style:italic;color:var(--ac);display:inline-block;transform:skewX(-4deg)}
 .foto img.mini{position:absolute;left:-8%;bottom:-4%;width:38%;height:auto;aspect-ratio:1;border-radius:22px;border:4px solid var(--bg);object-fit:cover;transform:rotate(-9deg);animation:fl 6s ease-in-out infinite reverse;box-shadow:0 14px 40px #0005}
 .tira{background:#FFF1F5;color:var(--fg);border-color:#F4D9E2}.info{background:#FFF1F5;color:var(--fg)}.info .b{background:var(--ac);color:var(--acfg);border-color:var(--ac)}.dato{border-top-color:#F4D9E2}nav{border-bottom:1px solid #F4D9E2}.c{border:1px solid #F4D9E2;background:#fff;box-shadow:0 10px 30px #0000000d}.c img{border-bottom:1px solid #F4D9E2}.gal figure{border:1px solid #F4D9E2}.foto img{border:6px solid #fff;box-shadow:0 20px 50px #0000001f}.b.o{border-color:#E8B8C8}
-.lgw{display:block;width:150px;height:62px;overflow:hidden}.lgw img{display:block;width:210px;height:210px;margin:-71px 0 0 -30px;mix-blend-mode:multiply}.lgw.g{width:240px;height:100px;margin:0 auto 14px}.lgw.g img{width:336px;height:336px;margin:-114px 0 0 -48px}
+.wm{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:700;font-size:clamp(1.5rem,6vw,2.1rem);line-height:1;color:var(--fg);display:inline-flex;flex-direction:column;letter-spacing:-.01em}.wm small{font-family:'DM Sans',system-ui,sans-serif;font-style:normal;font-weight:600;font-size:.34em;letter-spacing:.32em;text-transform:uppercase;color:var(--ac);margin-top:.5em}.wm.g{align-items:center;font-size:clamp(2.2rem,9vw,3.4rem);margin:0 auto 14px}
+
+.cartb{position:relative;display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;border:1px solid color-mix(in srgb,var(--fg) 18%,transparent);background:var(--bg);color:var(--fg);cursor:pointer}
+.cartb svg{width:22px;height:22px}
+.cartb b{position:absolute;top:-4px;right:-4px;min-width:20px;height:20px;padding:0 5px;border-radius:99px;background:var(--ac);color:var(--acfg);font-size:.72rem;display:grid;place-items:center}
+.nr{display:flex;align-items:center;gap:10px}
+.pr2{font-weight:800;font-size:1.15rem}
+.sel{font:inherit;font-weight:600;padding:.55em .7em;border-radius:10px;border:1px solid #E8B8C8;background:#fff;color:var(--fg)}
+.pie2{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.ov{position:fixed;inset:0;background:#0007;opacity:0;pointer-events:none;transition:.25s;z-index:60}
+.ov.v{opacity:1;pointer-events:auto}
+.dr{position:fixed;top:0;right:0;bottom:0;width:min(430px,100vw);background:#fff;color:var(--fg);z-index:61;transform:translateX(105%);transition:transform .3s;display:flex;flex-direction:column;box-shadow:-20px 0 60px #0003}
+.dr.v{transform:none}
+.dr header{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-bottom:1px solid #F4D9E2;position:static;background:#fff}
+.dr h3{margin:0;font-size:1.3rem}
+.x{font:inherit;font-size:1.6rem;line-height:1;background:none;border:0;cursor:pointer;color:var(--fg);padding:4px 10px}
+.ls{flex:1;overflow:auto;padding:8px 20px}
+.li{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid #F4D9E2}
+.li img{width:64px;height:64px;border-radius:12px;object-fit:cover}
+.li strong{display:block;font-size:.98rem}.li small{color:#6b5560;font-size:.82rem}
+.qt{display:flex;align-items:center;gap:6px;margin-top:6px}
+.qt button{width:28px;height:28px;border-radius:50%;border:1px solid #E8B8C8;background:#fff;color:var(--fg);font-size:1rem;cursor:pointer}
+.empty{padding:40px 10px;text-align:center;color:#6b5560}
+.ft{padding:16px 20px 22px;border-top:1px solid #F4D9E2}
+.tot{display:flex;justify-content:space-between;font-weight:800;font-size:1.25rem;margin-bottom:12px}
+.ft .b{width:100%;text-align:center;white-space:normal}
+.ft small{display:block;margin-top:10px;color:#6b5560;text-align:center}
+@media(max-width:560px){.navcta{display:none}}
+
 .r{opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1)}
 .r.v{opacity:1;transform:none}
 .demo{position:fixed;left:0;right:0;bottom:0;z-index:40;background:#111;color:#fff;font-size:.78rem;padding:8px 12px;display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;text-align:center}
@@ -111,7 +139,7 @@ section{padding:64px 0}
 </style>
 </head>
 <body class="h0 f0 k1">
-<nav><div class="w"><span class="lgw"><img src="logo.jpg" alt="Cuenta Conmigo"></span><a class="b" href="#carta">Ver lo nuevo</a></div></nav>
+<nav><div class="w"><span class="wm">Cuenta Conmigo<small>indumentaria</small></span><div class="nr"><a class="b navcta" href="#carta">Ver lo nuevo</a><button class="cartb" id="cartb" aria-label="Abrir carrito"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><b id="cn">0</b></button></div></div></nav>
 <header><div class="w">
  <div>
   <p class="ceja">Moda para chicas, con onda propia.</p>
@@ -124,11 +152,14 @@ section{padding:64px 0}
 <div class="tira"><div><span>NUEVA TEMPORADA</span><i>✦</i><span>LOOKS PARA VOS</span><i>✦</i><span>TALLES REALES</span><i>✦</i><span>ENVÍOS</span><i>✦</i><span>CUENTA CONMIGO</span><i>✦</i><span>NUEVA TEMPORADA</span><i>✦</i><span>LOOKS PARA VOS</span><i>✦</i><span>TALLES REALES</span><i>✦</i><span>ENVÍOS</span><i>✦</i><span>CUENTA CONMIGO</span><i>✦</i></div></div>
 <section style="padding-top:64px;padding-bottom:0px"><div class="w r"><p class="frase d">Para vos, <em>con tu estilo.</em></p></div>
 <div class="gal r" style="margin-top:34px"><figure><img loading="lazy" src="https://images.unsplash.com/photo-1536180931879-fd2d652efddc?auto=format&fit=crop&q=72&w=560&h=746" alt=""></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?auto=format&fit=crop&q=72&w=560&h=746" alt=""></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1637228393246-c38a4b3d2011?auto=format&fit=crop&q=72&w=560&h=746" alt=""></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1614990354198-b06764dcb13c?auto=format&fit=crop&q=72&w=560&h=746" alt=""></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1571513800374-df1bbe650e56?auto=format&fit=crop&q=72&w=560&h=746" alt=""></figure></div></section><section id="carta"><div class="w">
- <div class="tt r"><h2 class="d">Lo nuevo</h2><span class="nota">Productos de ejemplo</span></div>
+ <div class="tt r"><h2 class="d">Lo nuevo</h2><span class="nota">Productos y precios de ejemplo</span></div>
  <div class="g">
-  <article class="c r"><img loading="lazy" src="https://images.unsplash.com/photo-1613915617430-8ab0fd7c6baf?auto=format&fit=crop&q=72&w=700&h=525" alt=""><div class="in"><small>01 / CUENTA CONMIGO</small><h3 class="d">Nuevos ingresos</h3><p>Lo último que llegó al local, antes de que vuele.</p><div class="pie"><button class="b" data-t>Consultar talle</button></div></div></article>
-  <article class="c r"><img loading="lazy" src="https://images.unsplash.com/photo-1536180931879-fd2d652efddc?auto=format&fit=crop&q=72&w=700&h=525" alt=""><div class="in"><small>02 / CUENTA CONMIGO</small><h3 class="d">Looks de salida</h3><p>Outfits listos para brillar, de día y de noche.</p><div class="pie"><button class="b" data-t>Consultar talle</button></div></div></article>
-  <article class="c r"><img loading="lazy" src="https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?auto=format&fit=crop&q=72&w=700&h=525" alt=""><div class="in"><small>03 / CUENTA CONMIGO</small><h3 class="d">Básicos</h3><p>Las prendas que combinan con todo y no fallan nunca.</p><div class="pie"><button class="b" data-t>Consultar talle</button></div></div></article>
+  <article class="c r"><img loading="lazy" src="https://images.unsplash.com/photo-1571513800374-df1bbe650e56?auto=format&fit=crop&q=72&w=700&h=640" alt="Remera oversize"><div class="in"><small>01 / CUENTA CONMIGO</small><h3 class="d">Remera oversize</h3><p>Algodón peinado, caída suelta. Para todos los días.</p><div class="pie2"><span class="pr2">$16.900</span><select class="sel" aria-label="Talle" data-s="1"><option>S</option><option selected>M</option><option>L</option><option>XL</option></select><button class="b add" data-a="1">Agregar</button></div></div></article>
+  <article class="c r"><img loading="lazy" src="https://images.unsplash.com/photo-1662532577856-e8ee8b138a8b?auto=format&fit=crop&q=72&w=700&h=640" alt="Jean mom fit"><div class="in"><small>02 / CUENTA CONMIGO</small><h3 class="d">Jean mom fit</h3><p>Tiro alto, cómodo y con forma. Combina con todo.</p><div class="pie2"><span class="pr2">$42.500</span><select class="sel" aria-label="Talle" data-s="2"><option>S</option><option selected>M</option><option>L</option><option>XL</option></select><button class="b add" data-a="2">Agregar</button></div></div></article>
+  <article class="c r"><img loading="lazy" src="https://images.unsplash.com/photo-1613915617430-8ab0fd7c6baf?auto=format&fit=crop&q=72&w=700&h=640" alt="Vestido midi"><div class="in"><small>03 / CUENTA CONMIGO</small><h3 class="d">Vestido midi</h3><p>Liviano y fresco, ideal para salir de día o de noche.</p><div class="pie2"><span class="pr2">$39.900</span><select class="sel" aria-label="Talle" data-s="3"><option>S</option><option selected>M</option><option>L</option><option>XL</option></select><button class="b add" data-a="3">Agregar</button></div></div></article>
+  <article class="c r"><img loading="lazy" src="https://images.unsplash.com/photo-1536180931879-fd2d652efddc?auto=format&fit=crop&q=72&w=700&h=640" alt="Top de punto"><div class="in"><small>04 / CUENTA CONMIGO</small><h3 class="d">Top de punto</h3><p>Ajustado, suave y fácil de combinar.</p><div class="pie2"><span class="pr2">$14.500</span><select class="sel" aria-label="Talle" data-s="4"><option>S</option><option selected>M</option><option>L</option><option>XL</option></select><button class="b add" data-a="4">Agregar</button></div></div></article>
+  <article class="c r"><img loading="lazy" src="https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?auto=format&fit=crop&q=72&w=700&h=640" alt="Campera de jean"><div class="in"><small>05 / CUENTA CONMIGO</small><h3 class="d">Campera de jean</h3><p>El clásico que nunca falla en la entretemporada.</p><div class="pie2"><span class="pr2">$58.000</span><select class="sel" aria-label="Talle" data-s="5"><option>S</option><option selected>M</option><option>L</option><option>XL</option></select><button class="b add" data-a="5">Agregar</button></div></div></article>
+  <article class="c r"><img loading="lazy" src="https://images.unsplash.com/photo-1637228393246-c38a4b3d2011?auto=format&fit=crop&q=72&w=700&h=640" alt="Pollera plisada"><div class="in"><small>06 / CUENTA CONMIGO</small><h3 class="d">Pollera plisada</h3><p>Movimiento y estilo, en varios colores.</p><div class="pie2"><span class="pr2">$27.900</span><select class="sel" aria-label="Talle" data-s="6"><option>S</option><option selected>M</option><option>L</option><option>XL</option></select><button class="b add" data-a="6">Agregar</button></div></div></article>
  </div>
 </div></section>
 
@@ -141,12 +172,32 @@ section{padding:64px 0}
   <div class="ctas" style="margin-top:14px"><a class="b" href="https://www.google.com/maps/search/?api=1&query=Cuenta%20Conmigo%20%7C%20Indumentaria%20Monte%20Grande%2C%20Buenos%20Aires" target="_blank" rel="noopener">Cómo llegar</a></div>
  </div>
 </div></div></section>
-<section class="fin"><div class="w r"><span class="lgw g"><img src="logo.jpg" alt="Cuenta Conmigo"></span><p class="ceja" style="margin:0 auto 18px">Cuenta Conmigo, así podría verse tu web.</p><div class="ctas" style="justify-content:center"><button class="b" data-t>Consultar por WhatsApp</button><a class="b o" href="https://elchepibe.site" target="_blank" rel="noopener">Quiero esta web</a></div></div><div class="big d"><span>CUENTA CONMIGO</span><span>CUENTA CONMIGO</span><span>CUENTA CONMIGO</span><span>CUENTA CONMIGO</span><span>CUENTA CONMIGO</span><span>CUENTA CONMIGO</span></div></section>
+<section class="fin"><div class="w r"><span class="wm g">Cuenta Conmigo<small>indumentaria</small></span><p class="ceja" style="margin:0 auto 18px">Cuenta Conmigo, así podría verse tu web.</p><div class="ctas" style="justify-content:center"><button class="b" data-t>Consultar por WhatsApp</button><a class="b o" href="https://elchepibe.site" target="_blank" rel="noopener">Quiero esta web</a></div></div><div class="big d"><span>CUENTA CONMIGO</span><span>CUENTA CONMIGO</span><span>CUENTA CONMIGO</span><span>CUENTA CONMIGO</span><span>CUENTA CONMIGO</span><span>CUENTA CONMIGO</span></div></section>
 <div id="to"></div>
+<div class="ov" id="ov"></div>
+<aside class="dr" id="dr" aria-label="Carrito"><header><h3 class="d">Tu carrito</h3><button class="x" id="cx" aria-label="Cerrar">×</button></header><div class="ls" id="ls"></div><div class="ft"><div class="tot"><span>Total</span><span id="tt2">$0</span></div><button class="b" id="co">Finalizar compra por WhatsApp</button><small>Demo: no se envía ningún pedido.</small></div></aside>
 <div class="demo"><span>Demo hecha por <b>El Chepibe</b> · no es el sitio oficial</span><a href="https://elchepibe.site" target="_blank" rel="noopener">Quiero mi web →</a></div>
 <script>
 var to=document.getElementById('to'),tm;
 document.querySelectorAll('[data-t]').forEach(function(b){b.addEventListener('click',function(){to.textContent="En tu web real, este botón abre tu WhatsApp con la prenda y el talle ya escritos.";to.classList.add('v');clearTimeout(tm);tm=setTimeout(function(){to.classList.remove('v')},4200)})});
+
+(function(){
+var P=[{"id":1,"n":"Remera oversize","p":16900,"f":"https://images.unsplash.com/photo-1571513800374-df1bbe650e56?auto=format&fit=crop&q=72&w=160&h=160"},{"id":2,"n":"Jean mom fit","p":42500,"f":"https://images.unsplash.com/photo-1662532577856-e8ee8b138a8b?auto=format&fit=crop&q=72&w=160&h=160"},{"id":3,"n":"Vestido midi","p":39900,"f":"https://images.unsplash.com/photo-1613915617430-8ab0fd7c6baf?auto=format&fit=crop&q=72&w=160&h=160"},{"id":4,"n":"Top de punto","p":14500,"f":"https://images.unsplash.com/photo-1536180931879-fd2d652efddc?auto=format&fit=crop&q=72&w=160&h=160"},{"id":5,"n":"Campera de jean","p":58000,"f":"https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?auto=format&fit=crop&q=72&w=160&h=160"},{"id":6,"n":"Pollera plisada","p":27900,"f":"https://images.unsplash.com/photo-1637228393246-c38a4b3d2011?auto=format&fit=crop&q=72&w=160&h=160"}],C=[],$=function(i){return document.getElementById(i)};
+function m(n){return '$'+n.toLocaleString('es-AR')}
+function draw(){var h='',tot=0,q=0;C.forEach(function(it,i){var p=P.filter(function(x){return x.id===it.id})[0];tot+=p.p*it.q;q+=it.q;h+='<div class="li"><img src="'+p.f+'" alt=""><div><strong>'+p.n+'</strong><small>Talle '+it.s+' · '+m(p.p)+'</small><div class="qt"><button data-m="'+i+'" aria-label="Menos">−</button><span>'+it.q+'</span><button data-p="'+i+'" aria-label="Más">+</button></div></div><strong>'+m(p.p*it.q)+'</strong></div>'});
+$('ls').innerHTML=h||'<div class="empty">Tu carrito está vacío.<br>Agregá algo que te guste ♡</div>';$('tt2').textContent=m(tot);$('cn').textContent=q;$('co').disabled=!q;$('co').style.opacity=q?1:.5}
+function open(v){$('dr').classList.toggle('v',v);$('ov').classList.toggle('v',v)}
+document.addEventListener('click',function(e){var t=e.target.closest('button');if(!t)return;
+ if(t.dataset.a){var id=+t.dataset.a,s=document.querySelector('[data-s="'+id+'"]').value,f=C.filter(function(x){return x.id===id&&x.s===s})[0];if(f)f.q++;else C.push({id:id,s:s,q:1});draw();open(true)}
+ else if(t.dataset.p){C[+t.dataset.p].q++;draw()}
+ else if(t.dataset.m){var i=+t.dataset.m;C[i].q--;if(!C[i].q)C.splice(i,1);draw()}
+ else if(t.id==='cartb')open(true);else if(t.id==='cx')open(false);
+ else if(t.id==='co'){var to=$('to');to.textContent="En tu web real, este botón abre tu WhatsApp con el pedido ya armado (prendas, talles y total).";to.classList.add('v');setTimeout(function(){to.classList.remove('v')},4200)}});
+$('ov').addEventListener('click',function(){open(false)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')open(false)});
+draw();
+})();
+
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.r').forEach(function(el,i){el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
 </script>
