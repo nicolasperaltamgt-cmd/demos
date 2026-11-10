@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ROPA FLORES — Demo de sitio web</title>
+<meta name="description" content="Propuesta de sitio web para ROPA FLORES. Demo de muestra hecha por El Chepibe.">
+<meta property="og:title" content="ROPA FLORES — así podría verse tu web">
+<meta property="og:image" content="https://images.unsplash.com/photo-1614990354198-b06764dcb13c?auto=format&fit=crop&q=72&w=1200&h=630">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#101010;--fg:#F3EEE6;--ac:#C8FF3D;--acfg:#101010}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:'DM Sans',system-ui,sans-serif;font-size:18px;line-height:1.4;overflow-x:hidden;padding-bottom:52px}
+a{color:inherit}
+.d{font-family:'Archivo Black',Arial,sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.005em;font-weight:400}
+.w{max-width:1180px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:2px solid var(--fg)}
+nav .w{display:flex;justify-content:space-between;align-items:center;gap:12px;height:68px}
+.logo{font-family:'Archivo Black',Arial,sans-serif;font-weight:400;font-size:clamp(1.15rem,4.6vw,1.9rem);text-transform:lowercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.b{display:inline-block;background:var(--ac);color:var(--acfg);border:2px solid var(--ac);border-radius:999px;padding:.8em 1.4em;font-weight:800;font-size:.9rem;text-transform:uppercase;text-decoration:none;cursor:pointer;white-space:nowrap;transition:transform .15s}
+.b:hover{transform:translateY(-2px) rotate(-1deg)}
+.b.o{background:transparent;color:var(--fg);border-color:var(--fg)}
+header{position:relative;padding:56px 0 40px}
+.ceja{font-weight:800;text-transform:uppercase;font-size:.95rem;max-width:22ch;margin-bottom:18px}
+h1 .l1{display:block;font-size:clamp(2.45rem,10.80vw,7.92rem)}
+h1 .l2{display:block;font-size:clamp(2.45rem,10.80vw,7.92rem);font-style:italic;transform:skewX(-4deg);transform-origin:left;color:var(--ac);line-height:.98;margin-top:.08em;overflow-wrap:anywhere}
+.sub{max-width:30ch;margin:22px 0 26px;font-size:1.15rem}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.foto{position:relative;margin:36px auto 0;width:min(78vw,430px);aspect-ratio:1}
+.foto img{width:100%;height:100%;object-fit:cover;border-radius:50%;border:4px solid var(--fg);animation:fl 5s ease-in-out infinite}
+.sello{position:absolute;right:-6%;top:-4%;width:118px;height:118px;border-radius:50%;background:var(--ac);color:var(--acfg);display:grid;place-items:center;text-align:center;font-family:'Archivo Black',Arial,sans-serif;font-weight:400;font-size:0.73rem;line-height:1;text-transform:uppercase;transform:rotate(12deg);animation:gi 14s linear infinite;border:3px solid var(--bg)}
+@keyframes fl{50%{transform:translateY(-14px) rotate(2deg)}}
+@keyframes gi{to{transform:rotate(372deg)}}
+.tira{border-block:2px solid var(--fg);overflow:hidden;white-space:nowrap;padding:14px 0;background:var(--fg);color:var(--bg)}
+.tira div{display:inline-block;animation:mq 22s linear infinite;font-family:'Archivo Black',Arial,sans-serif;font-weight:400;font-size:1.6rem;text-transform:uppercase}
+.tira span{margin:0 18px}.tira i{font-style:normal;opacity:.7}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:64px 0}
+.tt{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.tt h2{font-size:clamp(2.16rem,8.64vw,5.04rem)}
+.nota{border:2px dashed var(--fg);border-radius:999px;padding:.35em 1em;font-size:.78rem;font-weight:800;text-transform:uppercase;opacity:.85}
+.g{display:grid;gap:18px}
+.c{border:2px solid var(--fg);border-radius:26px;overflow:hidden;display:flex;flex-direction:column;background:color-mix(in srgb,var(--fg) 7%,transparent)}
+.c img{width:100%;aspect-ratio:4/3;object-fit:cover;border-bottom:2px solid var(--fg)}
+.c .in{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.c small{font-weight:800;opacity:.75}
+.c h3{font-size:1.73rem}
+.c p{flex:1}
+.c .pie{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:6px}
+.c .pr{font-family:'Archivo Black',Arial,sans-serif;font-size:1.5rem}
+.info{background:var(--fg);color:var(--bg)}
+.info .b{background:var(--bg);color:var(--fg);border-color:var(--bg)}
+.info .gi{display:grid;gap:26px}
+.info h2{font-size:clamp(1.87rem,7.20vw,3.96rem);margin-bottom:8px}
+.dato{border-top:2px solid var(--bg);padding:16px 0}
+.dato b{display:block;font-size:.8rem;text-transform:uppercase;opacity:.7;margin-bottom:2px}
+.dato span,.dato a{font-size:1.25rem;font-weight:600}
+.fin{text-align:center;padding:72px 0 40px;overflow:hidden}
+.fin .big{font-size:clamp(2.88rem,13.68vw,10.08rem);white-space:nowrap;color:var(--ac);margin-top:40px;display:inline-block;animation:mq 26s linear infinite;padding-bottom:.08em}
+.fin .big span{margin-right:.35em}.fin .big span:nth-child(even){-webkit-text-stroke:2px var(--ac);color:transparent}
+.gal{display:flex;gap:18px;padding:10px 20px 0;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.gal::-webkit-scrollbar{display:none}
+.gal figure{flex:0 0 min(72vw,340px);scroll-snap-align:center;border:3px solid var(--fg);border-radius:28px;overflow:hidden;aspect-ratio:3/4;transition:transform .35s}
+.gal figure:nth-child(odd){transform:rotate(-2.5deg)}.gal figure:nth-child(even){transform:rotate(2deg) translateY(18px)}
+.gal figure:hover{transform:rotate(0) scale(1.03)}
+.gal img{width:100%;height:100%;object-fit:cover;display:block}
+.frase{font-size:clamp(1.73rem,6.48vw,4.61rem);max-width:15ch}
+.frase em{font-style:italic;color:var(--ac);display:inline-block;transform:skewX(-4deg)}
+.foto img.mini{position:absolute;left:-8%;bottom:-4%;width:38%;height:auto;aspect-ratio:1;border-radius:22px;border:4px solid var(--bg);object-fit:cover;transform:rotate(-9deg);animation:fl 6s ease-in-out infinite reverse;box-shadow:0 14px 40px #0005}
+.r{opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.r.v{opacity:1;transform:none}
+.demo{position:fixed;left:0;right:0;bottom:0;z-index:40;background:#111;color:#fff;font-size:.78rem;padding:8px 12px;display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;text-align:center}
+.demo a{background:#fff;color:#111;border-radius:999px;padding:.45em 1em;font-weight:800;text-decoration:none;white-space:nowrap}
+#to{position:fixed;left:50%;bottom:84px;transform:translate(-50%,30px);background:#111;color:#fff;padding:14px 18px;border-radius:16px;max-width:min(92vw,420px);font-size:.95rem;opacity:0;pointer-events:none;transition:.3s;z-index:50;box-shadow:0 10px 40px #0006}
+#to.v{opacity:1;transform:translate(-50%,0)}
+/* forma de la foto */
+.f1 .foto{aspect-ratio:4/5}.f1 .foto>img:first-child{border-radius:999px 999px 26px 26px}
+.f2 .foto>img:first-child{border-radius:34px;transform:rotate(3deg);animation:none;box-shadow:14px 14px 0 var(--ac)}
+/* hero a pantalla completa con foto de fondo */
+.h1 header{min-height:86vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(180deg,#0005 0%,#0009 55%,#000d 100%),url(https://images.unsplash.com/photo-1614990354198-b06764dcb13c?auto=format&fit=crop&q=72&w=1500) center/cover}
+.h1 header .w{width:100%}
+.h1 header .foto{display:none}
+.h1 h1 .l2{color:var(--acfg);background:var(--ac);display:inline-block;padding:.04em .16em .1em;margin-top:.12em}
+.h1 header .b.o{color:#fff;border-color:#fff}
+.h1 header .ceja{max-width:none}
+/* hero centrado */
+.h2 header .w{display:block;text-align:center}
+.h2 header .ceja,.h2 header .sub{margin-inline:auto}
+.h2 h1 .l2{transform-origin:center}
+.h2 header .ctas{justify-content:center}
+.h2 .foto{width:min(92vw,820px);aspect-ratio:16/10;margin-top:44px}
+.h2 .foto>img:first-child{border-radius:999px 999px 30px 30px;animation:none;transform:none;box-shadow:none}
+.h2 .foto img.mini{width:24%;left:2%}
+.h2 .sello{right:3%}
+/* tarjetas estilo afiche */
+.k1 .c{border-radius:0;box-shadow:9px 9px 0 var(--ac);background:var(--bg)}
+.k1 .b{border-radius:6px}
+@media(min-width:820px){
+ .h0 header .w{display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:30px}
+ .h0 .foto{margin:0;width:100%}
+ .g{grid-template-columns:repeat(3,1fr)}
+ .info .gi{grid-template-columns:1fr 1fr;align-items:start}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.r{opacity:1;transform:none}}
+</style>
+</head>
+<body class="h2 f2 k0">
+<nav><div class="w"><span class="logo">ROPA FLORES®</span><a class="b" href="#carta">Ver lo nuevo</a></div></nav>
+<header><div class="w">
+ <div>
+  <p class="ceja">Indumentaria con onda propia.</p>
+  <h1 class="d"><span class="l1">VESTITE</span><span class="l2">ROPA FLORES.</span></h1>
+  <p class="sub">Nuevos ingresos todas las semanas. Mirá, elegí y reservá sin moverte de casa.</p>
+  <div class="ctas"><a class="b" href="#carta">Ver lo nuevo</a><button class="b o" data-t>Consultar por WhatsApp</button></div>
+ </div>
+ <div class="foto"><img src="https://images.unsplash.com/photo-1614990354198-b06764dcb13c?auto=format&fit=crop&q=72&w=860&h=860" alt=""><img class="mini" src="https://images.unsplash.com/photo-1613915617430-8ab0fd7c6baf?auto=format&fit=crop&q=72&w=360&h=360" alt=""><div class="sello">Buenos Aires<br>✦<br>NUEVA</div></div>
+</div></header>
+<div class="tira"><div><span>NUEVA TEMPORADA</span><i>✦</i><span>TALLES REALES</span><i>✦</i><span>3 CUOTAS</span><i>✦</i><span>ENVÍOS A TODO EL PAÍS</span><i>✦</i><span>ROPA FLORES</span><i>✦</i><span>NUEVA TEMPORADA</span><i>✦</i><span>TALLES REALES</span><i>✦</i><span>3 CUOTAS</span><i>✦</i><span>ENVÍOS A TODO EL PAÍS</span><i>✦</i><span>ROPA FLORES</span><i>✦</i></div></div>
+<section id="carta"><div class="w">
+ <div class="tt r"><h2 class="d">Lo nuevo</h2><span class="nota">Productos de ejemplo</span></div>
+ <div class="g">
+  <article class="c r"><img loading="lazy" src="https://images.unsplash.com/photo-1571513800374-df1bbe650e56?auto=format&fit=crop&q=72&w=700&h=525" alt=""><div class="in"><small>01 / ROPA FLORES</small><h3 class="d">Nuevos ingresos</h3><p>Lo último que llegó al local, antes de que vuele.</p><div class="pie"><button class="b" data-t>Consultar talle</button></div></div></article>
+  <article class="c r"><img loading="lazy" src="https://images.unsplash.com/photo-1662532577856-e8ee8b138a8b?auto=format&fit=crop&q=72&w=700&h=525" alt=""><div class="in"><small>02 / ROPA FLORES</small><h3 class="d">Básicos</h3><p>Las prendas que combinan con todo y no fallan nunca.</p><div class="pie"><button class="b" data-t>Consultar talle</button></div></div></article>
+  <article class="c r"><img loading="lazy" src="https://images.unsplash.com/photo-1613915617430-8ab0fd7c6baf?auto=format&fit=crop&q=72&w=700&h=525" alt=""><div class="in"><small>03 / ROPA FLORES</small><h3 class="d">Sale</h3><p>Últimos talles con descuento. Cuando se van, se van.</p><div class="pie"><button class="b" data-t>Consultar talle</button></div></div></article>
+ </div>
+</div></section>
+<section style="padding-top:0px;padding-bottom:64px"><div class="w r"><p class="frase d">Lo que te gusta, <em>en tu talle.</em></p></div>
+<div class="gal r" style="margin-top:34px"><figure><img loading="lazy" src="https://images.unsplash.com/photo-1662532577856-e8ee8b138a8b?auto=format&fit=crop&q=72&w=560&h=746" alt=""></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1613915617430-8ab0fd7c6baf?auto=format&fit=crop&q=72&w=560&h=746" alt=""></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1536180931879-fd2d652efddc?auto=format&fit=crop&q=72&w=560&h=746" alt=""></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?auto=format&fit=crop&q=72&w=560&h=746" alt=""></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1637228393246-c38a4b3d2011?auto=format&fit=crop&q=72&w=560&h=746" alt=""></figure></div></section>
+<section class="info" id="donde"><div class="w"><div class="gi">
+ <div class="r"><h2 class="d">Dónde<br>estamos</h2><p>Todo lo que tu cliente busca, en un solo lugar y sin tener que preguntar.</p></div>
+ <div class="r">
+  <div class="dato"><b>Dirección</b><span>Av. Avellaneda 2924, Flores</span></div>
+  
+  <div class="dato"><b>Horarios</b><span>Acá van tus horarios reales</span></div>
+  <div class="ctas" style="margin-top:14px"><a class="b" href="https://www.google.com/maps/search/?api=1&query=ROPA%20FLORES%20Av.%20Avellaneda%202924%2C%20Flores" target="_blank" rel="noopener">Cómo llegar</a></div>
+ </div>
+</div></div></section>
+<section class="fin"><div class="w r"><p class="ceja" style="margin:0 auto 18px">ROPA FLORES, así podría verse tu web.</p><div class="ctas" style="justify-content:center"><button class="b" data-t>Consultar por WhatsApp</button><a class="b o" href="https://elchepibe.site" target="_blank" rel="noopener">Quiero esta web</a></div></div><div class="big d"><span>ROPA FLORES</span><span>ROPA FLORES</span><span>ROPA FLORES</span><span>ROPA FLORES</span><span>ROPA FLORES</span><span>ROPA FLORES</span></div></section>
+<div id="to"></div>
+<div class="demo"><span>Demo hecha por <b>El Chepibe</b> · no es el sitio oficial</span><a href="https://elchepibe.site" target="_blank" rel="noopener">Quiero mi web →</a></div>
+<script>
+var to=document.getElementById('to'),tm;
+document.querySelectorAll('[data-t]').forEach(function(b){b.addEventListener('click',function(){to.textContent="En tu web real, este botón abre tu WhatsApp con la prenda y el talle ya escritos.";to.classList.add('v');clearTimeout(tm);tm=setTimeout(function(){to.classList.remove('v')},4200)})});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.r').forEach(function(el,i){el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+</script>
+</body>
+</html>

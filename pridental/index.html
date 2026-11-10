@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>PRIDENTAL — Demo de sitio web</title>
+<meta name="description" content="Propuesta de sitio web para Pridental. Demo de muestra hecha por El Chepibe.">
+<meta property="og:title" content="PRIDENTAL — así podría verse tu web">
+<meta property="og:image" content="https://images.unsplash.com/photo-1643660526741-094639fbe53a?auto=format&fit=crop&q=72&w=1200&h=630">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,900;1,900&family=DM+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EAF6F3;--fg:#0E2F2A;--ac:#00A887;--acfg:#FFFFFF}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:'DM Sans',system-ui,sans-serif;font-size:18px;line-height:1.4;overflow-x:hidden;padding-bottom:52px}
+a{color:inherit}
+.d{font-family:Fraunces,Georgia,serif;text-transform:none;line-height:1;letter-spacing:-.02em;font-weight:900}
+.w{max-width:1180px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:2px solid var(--fg)}
+nav .w{display:flex;justify-content:space-between;align-items:center;gap:12px;height:68px}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:900;font-size:clamp(1.15rem,4.6vw,1.9rem);text-transform:lowercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.b{display:inline-block;background:var(--ac);color:var(--acfg);border:2px solid var(--ac);border-radius:999px;padding:.8em 1.4em;font-weight:800;font-size:.9rem;text-transform:uppercase;text-decoration:none;cursor:pointer;white-space:nowrap;transition:transform .15s}
+.b:hover{transform:translateY(-2px) rotate(-1deg)}
+.b.o{background:transparent;color:var(--fg);border-color:var(--fg)}
+header{position:relative;padding:56px 0 40px}
+.ceja{font-weight:800;text-transform:uppercase;font-size:.95rem;max-width:22ch;margin-bottom:18px}
+h1 .l1{display:block;font-size:clamp(2.52rem,11.10vw,8.14rem)}
+h1 .l2{display:block;font-size:clamp(1.92rem,8.14vw,6.29rem);font-style:italic;transform-origin:left;color:var(--ac);line-height:.98;margin-top:.08em;overflow-wrap:anywhere}
+.sub{max-width:30ch;margin:22px 0 26px;font-size:1.15rem}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.foto{position:relative;margin:36px auto 0;width:min(78vw,430px);aspect-ratio:1}
+.foto img{width:100%;height:100%;object-fit:cover;border-radius:50%;border:4px solid var(--fg);animation:fl 5s ease-in-out infinite}
+.sello{position:absolute;right:-6%;top:-4%;width:118px;height:118px;border-radius:50%;background:var(--ac);color:var(--acfg);display:grid;place-items:center;text-align:center;font-family:Fraunces,Georgia,serif;font-weight:900;font-size:0.75rem;line-height:1;text-transform:uppercase;transform:rotate(12deg);animation:gi 14s linear infinite;border:3px solid var(--bg)}
+@keyframes fl{50%{transform:translateY(-14px) rotate(2deg)}}
+@keyframes gi{to{transform:rotate(372deg)}}
+.tira{border-block:2px solid var(--fg);overflow:hidden;white-space:nowrap;padding:14px 0;background:var(--fg);color:var(--bg)}
+.tira div{display:inline-block;animation:mq 22s linear infinite;font-family:Fraunces,Georgia,serif;font-weight:900;font-size:1.6rem;text-transform:uppercase}
+.tira span{margin:0 18px}.tira i{font-style:normal;opacity:.7}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:64px 0}
+.tt{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.tt h2{font-size:clamp(2.22rem,8.88vw,5.18rem)}
+.nota{border:2px dashed var(--fg);border-radius:999px;padding:.35em 1em;font-size:.78rem;font-weight:800;text-transform:uppercase;opacity:.85}
+.g{display:grid;gap:18px}
+.c{border:2px solid var(--fg);border-radius:26px;overflow:hidden;display:flex;flex-direction:column;background:color-mix(in srgb,var(--fg) 7%,transparent)}
+.c img{width:100%;aspect-ratio:4/3;object-fit:cover;border-bottom:2px solid var(--fg)}
+.c .in{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.c small{font-weight:800;opacity:.75}
+.c h3{font-size:1.78rem}
+.c p{flex:1}
+.c .pie{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:6px}
+.c .pr{font-family:Fraunces,Georgia,serif;font-size:1.5rem}
+.info{background:var(--fg);color:var(--bg)}
+.info .b{background:var(--bg);color:var(--fg);border-color:var(--bg)}
+.info .gi{display:grid;gap:26px}
+.info h2{font-size:clamp(1.92rem,7.40vw,4.07rem);margin-bottom:8px}
+.dato{border-top:2px solid var(--bg);padding:16px 0}
+.dato b{display:block;font-size:.8rem;text-transform:uppercase;opacity:.7;margin-bottom:2px}
+.dato span,.dato a{font-size:1.25rem;font-weight:600}
+.fin{text-align:center;padding:72px 0 40px;overflow:hidden}
+.fin .big{font-size:clamp(2.96rem,14.06vw,10.36rem);white-space:nowrap;color:var(--ac);margin-top:40px;display:inline-block;animation:mq 26s linear infinite;padding-bottom:.08em}
+.fin .big span{margin-right:.35em}.fin .big span:nth-child(even){-webkit-text-stroke:2px var(--ac);color:transparent}
+.gal{display:flex;gap:18px;padding:10px 20px 0;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.gal::-webkit-scrollbar{display:none}
+.gal figure{flex:0 0 min(72vw,340px);scroll-snap-align:center;border:3px solid var(--fg);border-radius:28px;overflow:hidden;aspect-ratio:3/4;transition:transform .35s}
+.gal figure:nth-child(odd){transform:rotate(-2.5deg)}.gal figure:nth-child(even){transform:rotate(2deg) translateY(18px)}
+.gal figure:hover{transform:rotate(0) scale(1.03)}
+.gal img{width:100%;height:100%;object-fit:cover;display:block}
+.frase{font-size:clamp(1.78rem,6.66vw,4.74rem);max-width:15ch}
+.frase em{font-style:italic;color:var(--ac);display:inline-block;transform:skewX(-4deg)}
+.foto img.mini{position:absolute;left:-8%;bottom:-4%;width:38%;height:auto;aspect-ratio:1;border-radius:22px;border:4px solid var(--bg);object-fit:cover;transform:rotate(-9deg);animation:fl 6s ease-in-out infinite reverse;box-shadow:0 14px 40px #0005}
+.r{opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.r.v{opacity:1;transform:none}
+.demo{position:fixed;left:0;right:0;bottom:0;z-index:40;background:#111;color:#fff;font-size:.78rem;padding:8px 12px;display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;text-align:center}
+.demo a{background:#fff;color:#111;border-radius:999px;padding:.45em 1em;font-weight:800;text-decoration:none;white-space:nowrap}
+#to{position:fixed;left:50%;bottom:84px;transform:translate(-50%,30px);background:#111;color:#fff;padding:14px 18px;border-radius:16px;max-width:min(92vw,420px);font-size:.95rem;opacity:0;pointer-events:none;transition:.3s;z-index:50;box-shadow:0 10px 40px #0006}
+#to.v{opacity:1;transform:translate(-50%,0)}
+/* forma de la foto */
+.f1 .foto{aspect-ratio:4/5}.f1 .foto>img:first-child{border-radius:999px 999px 26px 26px}
+.f2 .foto>img:first-child{border-radius:34px;transform:rotate(3deg);animation:none;box-shadow:14px 14px 0 var(--ac)}
+/* hero a pantalla completa con foto de fondo */
+.h1 header{min-height:86vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(180deg,#0005 0%,#0009 55%,#000d 100%),url(https://images.unsplash.com/photo-1643660526741-094639fbe53a?auto=format&fit=crop&q=72&w=1500) center/cover}
+.h1 header .w{width:100%}
+.h1 header .foto{display:none}
+.h1 h1 .l2{color:var(--acfg);background:var(--ac);display:inline-block;padding:.04em .16em .1em;margin-top:.12em}
+.h1 header .b.o{color:#fff;border-color:#fff}
+.h1 header .ceja{max-width:none}
+/* hero centrado */
+.h2 header .w{display:block;text-align:center}
+.h2 header .ceja,.h2 header .sub{margin-inline:auto}
+.h2 h1 .l2{transform-origin:center}
+.h2 header .ctas{justify-content:center}
+.h2 .foto{width:min(92vw,820px);aspect-ratio:16/10;margin-top:44px}
+.h2 .foto>img:first-child{border-radius:999px 999px 30px 30px;animation:none;transform:none;box-shadow:none}
+.h2 .foto img.mini{width:24%;left:2%}
+.h2 .sello{right:3%}
+/* tarjetas estilo afiche */
+.k1 .c{border-radius:0;box-shadow:9px 9px 0 var(--ac);background:var(--bg)}
+.k1 .b{border-radius:6px}
+@media(min-width:820px){
+ .h0 header .w{display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:30px}
+ .h0 .foto{margin:0;width:100%}
+ .g{grid-template-columns:repeat(3,1fr)}
+ .info .gi{grid-template-columns:1fr 1fr;align-items:start}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.r{opacity:1;transform:none}}
+</style>
+</head>
+<body class="h0 f0 k1">
+<nav><div class="w"><span class="logo">Pridental®</span><a class="b" href="#carta">Pedir turno</a></div></nav>
+<header><div class="w">
+ <div>
+  <p class="ceja">Odontología cerca tuyo.</p>
+  <h1 class="d"><span class="l1">TU SONRISA,</span><span class="l2">EN BUENAS MANOS.</span></h1>
+  <p class="sub">Turnos rápidos, atención clara y sin vueltas. Pedí tu turno en un minuto.</p>
+  <div class="ctas"><a class="b" href="#carta">Pedir turno</a><button class="b o" data-t>Escribir por WhatsApp</button></div>
+ </div>
+ <div class="foto"><img src="https://images.unsplash.com/photo-1643660526741-094639fbe53a?auto=format&fit=crop&q=72&w=860&h=860" alt=""><img class="mini" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=72&w=360&h=360" alt=""><div class="sello">Canning<br>✦<br>TURNOS</div></div>
+</div></header>
+<div class="tira"><div><span>TURNOS ONLINE</span><i>✦</i><span>LIMPIEZA Y CONTROL</span><i>✦</i><span>ORTODONCIA</span><i>✦</i><span>ESTÉTICA DENTAL</span><i>✦</i><span>PRIDENTAL</span><i>✦</i><span>TURNOS ONLINE</span><i>✦</i><span>LIMPIEZA Y CONTROL</span><i>✦</i><span>ORTODONCIA</span><i>✦</i><span>ESTÉTICA DENTAL</span><i>✦</i><span>PRIDENTAL</span><i>✦</i></div></div>
+<section style="padding-top:64px;padding-bottom:0px"><div class="w r"><p class="frase d">Sin miedo. <em>Sin esperas.</em></p></div>
+<div class="gal r" style="margin-top:34px"><figure><img loading="lazy" src="https://images.unsplash.com/photo-1657470179447-0f5aa16daa91?auto=format&fit=crop&q=72&w=560&h=746" alt=""></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=72&w=560&h=746" alt=""></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1643660526741-094639fbe53a?auto=format&fit=crop&q=72&w=560&h=746" alt=""></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1777331903190-341a3dd0441b?auto=format&fit=crop&q=72&w=560&h=746" alt=""></figure><figure><img loading="lazy" src="https://images.unsplash.com/photo-1657470179447-0f5aa16daa91?auto=format&fit=crop&q=72&w=560&h=746" alt=""></figure></div></section><section id="carta"><div class="w">
+ <div class="tt r"><h2 class="d">Tratamientos</h2><span class="nota">Servicios de ejemplo</span></div>
+ <div class="g">
+  <article class="c r"><img loading="lazy" src="https://images.unsplash.com/photo-1777331903190-341a3dd0441b?auto=format&fit=crop&q=72&w=700&h=525" alt=""><div class="in"><small>01 / PRIDENTAL</small><h3 class="d">Limpieza y control</h3><p>El chequeo de cada seis meses, sin esperas eternas.</p><div class="pie"><button class="b" data-t>Pedir turno</button></div></div></article>
+  <article class="c r"><img loading="lazy" src="https://images.unsplash.com/photo-1657470179447-0f5aa16daa91?auto=format&fit=crop&q=72&w=700&h=525" alt=""><div class="in"><small>02 / PRIDENTAL</small><h3 class="d">Ortodoncia</h3><p>Brackets y alineadores con un plan claro desde el día uno.</p><div class="pie"><button class="b" data-t>Pedir turno</button></div></div></article>
+  <article class="c r"><img loading="lazy" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=72&w=700&h=525" alt=""><div class="in"><small>03 / PRIDENTAL</small><h3 class="d">Estética dental</h3><p>Blanqueamiento y carillas para una sonrisa que se nota.</p><div class="pie"><button class="b" data-t>Pedir turno</button></div></div></article>
+ </div>
+</div></section>
+
+<section class="info" id="donde"><div class="w"><div class="gi">
+ <div class="r"><h2 class="d">Dónde<br>estamos</h2><p>Todo lo que tu cliente busca, en un solo lugar y sin tener que preguntar.</p></div>
+ <div class="r">
+  <div class="dato"><b>Dirección</b><span>Av. Mariano Castex 1277, Canning</span></div>
+  <div class="dato"><b>Teléfono</b><a href="tel:01157654600">011 5765-4600</a></div>
+  <div class="dato"><b>Horarios</b><span>Acá van tus horarios reales</span></div>
+  <div class="ctas" style="margin-top:14px"><a class="b" href="https://www.google.com/maps/search/?api=1&query=Pridental%20Av.%20Mariano%20Castex%201277%2C%20Canning" target="_blank" rel="noopener">Cómo llegar</a><a class="b" href="tel:01157654600">Llamar</a></div>
+ </div>
+</div></div></section>
+<section class="fin"><div class="w r"><p class="ceja" style="margin:0 auto 18px">Pridental, así podría verse tu web.</p><div class="ctas" style="justify-content:center"><button class="b" data-t>Escribir por WhatsApp</button><a class="b o" href="https://elchepibe.site" target="_blank" rel="noopener">Quiero esta web</a></div></div><div class="big d"><span>PRIDENTAL</span><span>PRIDENTAL</span><span>PRIDENTAL</span><span>PRIDENTAL</span><span>PRIDENTAL</span><span>PRIDENTAL</span></div></section>
+<div id="to"></div>
+<div class="demo"><span>Demo hecha por <b>El Chepibe</b> · no es el sitio oficial</span><a href="https://elchepibe.site" target="_blank" rel="noopener">Quiero mi web →</a></div>
+<script>
+var to=document.getElementById('to'),tm;
+document.querySelectorAll('[data-t]').forEach(function(b){b.addEventListener('click',function(){to.textContent="En tu web real, este botón reserva el turno o abre tu WhatsApp con el tratamiento elegido.";to.classList.add('v');clearTimeout(tm);tm=setTimeout(function(){to.classList.remove('v')},4200)})});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.r').forEach(function(el,i){el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+</script>
+</body>
+</html>
